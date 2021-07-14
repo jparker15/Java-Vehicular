@@ -4,6 +4,7 @@ public class Passenger {
 
     String name;
     int weight;
+    int 2eight;
 
     public Passenger(){
 
