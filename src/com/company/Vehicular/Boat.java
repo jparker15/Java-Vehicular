@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Vehicular;
 
 public class Boat extends Vehicle{
     int maxLoad;

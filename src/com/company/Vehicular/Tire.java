@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Vehicular;
 
 public class Tire {
     int diameter;
