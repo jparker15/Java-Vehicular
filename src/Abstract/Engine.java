@@ -1,2 +1,8 @@
-package Abstract;public class Engine {
+package Abstract;
+
+public abstract class Engine {
+
+    abstract void startEngine();
+
+    abstract void stopEngine();
 }
