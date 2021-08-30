@@ -6,24 +6,25 @@ public class Vehicle  {
     String make;
     String model;
     String color;
-    int numOfSeats;
     Engine engine;
 
-    public Vehicle(){
-
-
+    public Vehicle(int year, String make, String model, String color, Engine engine){
+        this.year = year;
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.engine = engine;
     }
 
     public void start(){
-
+        engine.start();
     }
     public void stop(){
-
+        engine.stop();
     }
-    public void addPassenger(){
 
-    }
-    public void removePassenger(){
-
+    @Override
+    public String toString(){
+       return "Year: " + year + " | " + "Make: " + make + " | " + "Model: "+ model + " | " + "Color: " + color + " | " + "Engine: " + engine + " | ";
     }
 }
