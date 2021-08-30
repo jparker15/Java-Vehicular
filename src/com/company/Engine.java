@@ -4,6 +4,8 @@ package com.company;
 
     public boolean isRunning = false;
 
-    abstract void run();
+    abstract void start();
+
+    abstract void stop();
 
 }
