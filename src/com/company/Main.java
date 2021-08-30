@@ -2,9 +2,10 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-        Diesel d = new Diesel();
+        Vehicle whipe = new Vehicle(1995, "Volvo","850","Black",new Diesel());
 
-        d.run();
-        System.out.println(d.isRunning);
+        whipe.start();
+        whipe.stop();
+        System.out.println(whipe);
     }
 }
