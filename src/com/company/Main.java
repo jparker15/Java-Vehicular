@@ -8,21 +8,17 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int ticks = 0;
         int distance = 1000;
-        Vehicle whip = new Vehicle(1995, "Volvo","850","White",new Diesel());
-        Vehicle whipe = new Vehicle(1995, "Volvo","850","Pink",new Electric());
-        Vehicle whip3 = new Vehicle(1995, "Volvo","850","Black",new Diesel());
+        Vehicle v1 = new Vehicle(1995, "Volvo","850","White",new Diesel());
+        Vehicle v2 = new Vehicle(1995, "delorean","850","Pink",new Electric());
+        Vehicle v3 = new Vehicle(1995, "Volvo","850","Black",new Diesel());
 
-        Vehicle choosenVeh = whip;
+        Vehicle choosenVeh = v1;
         Engine choosenEng;
 
         Diesel d = new Diesel();
         Electric e = new Electric();
-//
-//        whipe.start();
-//        whipe.stop();
-//        System.out.println(whipe);
 
-        System.out.println("What type of engine");
+        System.out.println("Choose what type of engine for your Vehicle");
         System.out.println("1. Diesel");
         System.out.println("2. Electric");
         int engineChoice = scanner.nextInt();
@@ -30,16 +26,17 @@ public class Main {
         switch(engineChoice){
             case 1 -> System.out.println(d);
             case 2 -> System.out.println(e);
-            default -> System.out.println("Flintstone it");
+            default -> System.out.println("No Engine!");
         }
 
         System.out.println("Which vehicle would you like ?");
+
         int vehicleChoice = scanner.nextInt();
         switch (vehicleChoice) {
-            case 1 -> System.out.println(whip);
-            case 2 -> System.out.println(whipe);
-            case 3 -> System.out.println(whip3);
-            default -> System.out.println("You get nothing");
+            case 1 -> System.out.println(v1);
+            case 2 -> System.out.println(v2);
+            case 3 -> System.out.println(v3);
+            default -> System.out.println("No Car!");
         }
 
         while(true){
