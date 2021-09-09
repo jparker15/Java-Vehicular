@@ -1,2 +1,5 @@
-package com.company;public class DragRace {
+package com.company;
+
+public class DragRace {
+
 }
