@@ -8,8 +8,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int ticks = 0;
         int distance = 1000;
-        Vehicle v1 = new Vehicle(1995, "Volvo","850","White",new Diesel());
-        Vehicle v2 = new Vehicle(1995, "delorean","850","Pink",new Electric());
+        Vehicle v1 = new Vehicle(1980, "Ferrari","208 GTB","Red",new Diesel());
+        Vehicle v2 = new Vehicle(2004, "Lamborghini","Murciélago","Pink",new Electric());
         Vehicle v3 = new Vehicle(1995, "Volvo","850","Black",new Diesel());
 
         Vehicle choosenVeh = v1;
@@ -30,6 +30,9 @@ public class Main {
         }
 
         System.out.println("Which vehicle would you like ?");
+        System.out.println("1. " + v1);
+        System.out.println("2. " + v2);
+        System.out.println("3. " + v3);
 
         int vehicleChoice = scanner.nextInt();
         switch (vehicleChoice) {
