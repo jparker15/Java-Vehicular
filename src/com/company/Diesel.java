@@ -2,7 +2,9 @@ package com.company;
 
 public class Diesel extends Engine{
 
-    String type = "Diesel";
+    public Diesel(){
+        super("Diesel");
+    }
 
     @Override
     void start() {
