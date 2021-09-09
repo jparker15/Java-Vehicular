@@ -2,7 +2,9 @@ package com.company;
 
 public class Electric extends Engine{
 
-    String type = "Electric";
+    public Electric (){
+        super("Electric");
+    }
     @Override
     public void start(){
         isRunning = true;
