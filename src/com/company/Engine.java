@@ -2,10 +2,19 @@ package com.company;
 
  abstract class Engine {
 
-    public boolean isRunning = false;
+    protected boolean isRunning = false;
+    private String type;
+
+    public Engine (String type){
+        this.type = type;
+    }
 
     abstract void start();
 
     abstract void stop();
+
+    public String toString(){
+        return type;
+    }
 
 }
